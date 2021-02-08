@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <key>Exame Recurso</key>
+        <title>Exame Recurso</title>
+        <bdate>08/02/2021</bdate>
+        <edate>08/02/2021</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a71407">
+            <name>Maurício Zulueta Lima Salgado</name>
+            <email>a71407@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>As respostas estão no notas.txt do exercício 1 </p>S
+
+    </abstract>
+    <deliverables>
+        <link url="Exercicio1.txt">Exercício 1</link>
+        <link url="Exercicio2.txt">Exercício 2</link>
+    </deliverables>
+</pr>
