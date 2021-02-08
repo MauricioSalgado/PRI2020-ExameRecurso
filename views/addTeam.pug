@@ -1,0 +1,25 @@
+extends layout
+
+block content
+
+form(method = 'POST', action ='/api/teams')
+  #form-group
+    input.form-control(name='team', type='text', placeholder='team' required)
+  br
+  #form-group
+    input.form-control(name='pitch1', type='text', placeholder='pitch1')
+  br
+  #form-group
+    input.form-control(name='pitch2', type='date', placeholder='pitch2')
+  br
+  #form-group
+    input.form-control(name='techPitch', type='date', placeholder='techPitch')
+  br
+  #form-group
+    input.form-control(name='businessReport', type='date', placeholder='businessReport')
+  br
+  #form-group
+    input.form-control(name='techReport', type='date', placeholder='techReport')
+  br
+  br
+  input.btn.btn-primary(type='submit' value='Submit')

@@ -9,6 +9,14 @@ router.get('/teams', function(req, res, next) {
     .catch(erro => res.status(500).jsonp(erro))
 })
 
+router.get('/teams/add', function(req, res, next) {
+  res.render('addTeam');
+})
+
+router.get('/token', function(req, res, next) {
+  res.render('addTeam');
+})
+
 router.get('/teams/:id', function(req, res, next) {
   Teams.consultar(req.params.id)
     .then(dados => res.jsonp(dados))

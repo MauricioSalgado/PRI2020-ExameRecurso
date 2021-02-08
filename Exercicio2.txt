@@ -1,0 +1,18 @@
+Quantas equipes existem na base de dados? (resultado = inteiro)
+db.teams.count()
+resultado = 87
+
+Quais as equipes? (lista com os nomes das equipes ordenada alfabeticamente)
+db.teams.find({},{_id:0,team:1}).sort({team:1})
+
+
+Quantos alunos existem catalogados na base de dados? (resultado = inteiro)
+
+
+Quais os alunos? (lista de pares com os números de identificação e nomes dos alunos ordenada alfabeticamente por nome)
+
+
+Quantos alunos do MIEI existem catalogados na base de dados? (resultado = inteiro)
+
+
+Quantos membros tem cada equipe? (resultado = lista de pares, nome da equipe e número de elementos na equipe, ordenada
