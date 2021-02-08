@@ -7,7 +7,7 @@ db.teams.find({},{_id:0,team:1}).sort({team:1})
 
 
 Quantos alunos existem catalogados na base de dados? (resultado = inteiro)
-
+db.teams.aggregate({$project: {count: {$size: "$members"}}})
 
 Quais os alunos? (lista de pares com os números de identificação e nomes dos alunos ordenada alfabeticamente por nome)
 
