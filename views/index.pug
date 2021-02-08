@@ -16,5 +16,7 @@ table
         td businessReport: #{team.businessReport}
         td techReport: #{team.techReport}
         td nmembers: #{team.nmembers}
+  button.btn.btn-danger.btn-sm.delete(href='#', data-id= team._id) Remover
+        
 
 input(type='button' onclick="/api/teams/add';" value='Adicionar')

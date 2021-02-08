@@ -14,7 +14,6 @@ router.get('/teams/add', function(req, res, next) {
 })
 
 router.get('/token', function(req, res, next) {
-  res.render('addTeam');
 })
 
 router.get('/teams/:id', function(req, res, next) {

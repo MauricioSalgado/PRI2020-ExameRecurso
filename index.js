@@ -28,6 +28,18 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
+app.use(function(req,res,next){
+  axios.get('http://localhost:7000/api/token')
+  .then(dados => {
+    res.cookie('token', dados.data.token, {
+      expires: new Date(Date.now() + '1d'),
+      secure: false, // set to true if your using https
+      httpOnly: true
+    });
+    next()
+  })
+})
+
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
