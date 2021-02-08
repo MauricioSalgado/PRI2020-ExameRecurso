@@ -1,0 +1,18 @@
+extends layout
+
+block content
+h1= title
+p Welcome to #{title}
+
+table
+  tbody
+    each team in teams
+      tr
+        td ID: #{team._id}
+        td Team: #{team.team}
+        td Pitch1: #{team.pitch1}
+        td Pitch2: #{team.pitch2}
+        td techPitch: #{team.techPitch}
+        td businessReport: #{team.businessReport}
+        td techReport: #{team.techReport}
+        td nmembers: #{team.nmembers}
